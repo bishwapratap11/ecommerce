@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+</head>
+<body>
+    
+    <header class="container-header">
+        <div class="header-brand">
+            <img src="images/logo.png" alt="" class="brand-header-img">
+        </div>
+        <div class="header-search">
+            <form action="#" id="search_form">
+                <div class="search-inputs-container">
+                    <input type="text" autocomplete="off" name="search_products" placeholder="Search products by name" class="search-form-control">
+                    <button class="search-control-btn"><img src="images/icons/search.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
+        <div class="header-actions">
+            <span class="profile-action">
+                <img src="images/icons/user.svg" alt="">
+                <div class="account-hover">
+                    <!-- <a href="#"><button class="login-or-register">Login</button></a> -->
+                    <ul class="user-auth-actions">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </span>
+            <span class="cart-action">
+                <img src="images/icons/cart.svg" alt="">
+                <span class="cart-number">10</span>
+            </span>
+        </div>
+    </header>
+    <div class="container-index">
+        <div class="slider-container-index">
+
+        </div>
+        <div class="product-cursol">
+            <span class="product-show-msg">New Arrival</span>
+            <div class="product-cursol-container">
+                <div class="owl-carousel owl-theme cursol-product-slider">
+                    <div class="item">
+                        <div class="product-single-view">
+                            <div class="product-single-view-img">
+                                
+                                <img src="images/products/1.jpg" alt="">
+                            </div>
+                            <div class="product-single-view-rating">
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                            </div>
+                            <div class="product-single-view-name">                    
+                                <span>Lorem ipsum dolor sit amet consectetur</span>
+                            </div>
+                            <div class="product-single-view-price">                    
+                                <span>Rs 20000</span>
+                                <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-cursol">
+            <span class="product-show-msg">Featured Product</span>
+            <div class="product-cursol-container">
+                <div class="owl-carousel owl-theme cursol-product-slider">
+                    <div class="item">
+                        <div class="product-single-view">
+                            <div class="product-single-view-img">
+                                
+                                <img src="images/products/1.jpg" alt="">
+                            </div>
+                            <div class="product-single-view-rating">
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                                <span class="st-1 strs">&#9733;</span>
+                            </div>
+                            <div class="product-single-view-name">                    
+                                <span>Lorem ipsum dolor sit amet consectetur</span>
+                            </div>
+                            <div class="product-single-view-price">                    
+                                <span>Rs 20000</span>
+                                <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+        $(".cursol-product-slider").owlCarousel({
+            loop: true,
+            nav: false,
+            margin: 15,
+            autplay: true,
+            responsive: {
+                0:{
+                    items:1
+                },
+                200:{
+                    items:2
+                },
+                400:{
+                    items:2
+                },
+                500:{
+                    items:3
+                },
+                600:{
+                    items:3
+                },
+                700:{
+                    items:4
+                },
+                900:{
+                    items: 4
+                },
+                1000:{
+                    items:5
+                },
+                1100:{
+                    items:5
+                },
+                1500:{
+                    items:7
+                }
+            }
+        });
+    })
+</script>

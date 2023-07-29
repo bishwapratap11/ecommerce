@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    
+    <header class="container-header">
+        <div class="header-brand">
+            <img src="images/logo.png" alt="" class="brand-header-img">
+        </div>
+        <div class="header-search">
+            <form action="#" id="search_form">
+                <div class="search-inputs-container">
+                    <input type="text" autocomplete="off" name="search_products" placeholder="Search products by name" class="search-form-control">
+                    <button class="search-control-btn"><img src="images/icons/search.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
+        <div class="header-actions">
+            <span class="profile-action">
+                <img src="images/icons/user.svg" alt="">
+                <div class="account-hover">
+                    <a href="#"><button class="login-or-register">Login</button></a>
+                    <ul class="user-auth-actions">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </span>
+            <span class="cart-action">
+                <img src="images/icons/cart.svg" alt="">
+                <span class="cart-number">10</span>
+            </span>
+        </div>
+    </header>
+
+    <div class="product-list-container">
+        <div class="product-filter-container">
+            <div class="product-filter-main-container">
+                <div class="product-filter-container-depratment">
+                    <span class="pb-5">Departments</span>
+                    <div class="department-list">
+                        <div class="category-list">
+                            <span class="btn-expand">Electronics & Mobile</span>
+                            <div class="expand-item">
+                                <ul>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <span class="btn-expand">Laptops & Computer</span>
+                            <div class="expand-item">
+                                <ul>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <span class="btn-expand">Health & Beauty</span>
+                            <div class="expand-item">
+                                <ul>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-filter-container-depratment">
+                    <span class="pb-5">Brands</span>
+                    <div class="brand-list">
+                        <div class="brand-list">
+                            <ul class="checkbox-filter">
+                                <li>
+                                    <input type="checkbox" id="1">
+                                    <label for="1">Samsung</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="2">
+                                    <label for="2">Oppo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="3">
+                                    <label for="3">Vivo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="4">
+                                    <label for="4">Apple</label>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="product-filter-container-depratment">
+                    <span class="pb-5">Ratings</span>
+                    <div class="brand-list">
+                        <div class="brand-list">
+                            <ul class="checkbox-filter">
+                                <li>
+                                    <input type="checkbox" id="5">
+                                    <label for="5">
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="6">
+                                    <label for="6">
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="7">
+                                    <label for="7">
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="8">
+                                    <label for="8">
+                                        <span class="st-1">&#9733;</span>
+                                        <span class="st-1">&#9733;</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="9">
+                                    <label for="9">
+                                        <span class="st-1">&#9733;</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="product-filter-container-depratment">
+                    <span class="pb-5">Color</span>
+                    <div class="brand-list">
+                        <div class="brand-list">
+                            <ul class="checkbox-filter">
+                                <li>
+                                    <input type="checkbox" id="10">
+                                    <label for="10">Red</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="12">
+                                    <label for="12">Yellow</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="13">
+                                    <label for="13">White</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="14">
+                                    <label for="14">Black</label>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-display-container">
+            <div class="product-display-main-container">
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-single-view">
+                    <div class="product-single-view-img">
+                        
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-single-view-rating">
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                        <span class="st-1 strs">&#9733;</span>
+                    </div>
+                    <div class="product-single-view-name">                    
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                    <div class="product-single-view-price">                    
+                        <span>Rs 20000</span>
+                        <button class="add-to-cart-product-list"><i class="lni lni-cart"></i></button>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+        
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        var expandBtn = $('.btn-expand');
+        $('.btn-expand').click(function(e) {
+            $(this).siblings().toggle(1000);
+        });
+    });
+</script>

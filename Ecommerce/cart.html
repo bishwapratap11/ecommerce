@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+</head>
+<body>
+    
+    <header class="container-header">
+        <div class="header-brand">
+            <img src="images/logo.png" alt="" class="brand-header-img">
+        </div>
+        <div class="header-search">
+            <form action="#" id="search_form">
+                <div class="search-inputs-container">
+                    <input type="text" autocomplete="off" name="search_products" placeholder="Search products by name" class="search-form-control">
+                    <button class="search-control-btn"><img src="images/icons/search.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
+        <div class="header-actions">
+            <span class="profile-action">
+                <img src="images/icons/user.svg" alt="">
+                <div class="account-hover">
+                    <a href="#"><button class="login-or-register-action">Login</button></a>
+                    <ul class="user-auth-actions">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </span>
+            <span class="cart-action">
+                <img src="images/icons/cart.svg" alt="">
+                <span class="cart-number">10</span>
+            </span>
+        </div>
+    </header>
+    <div class="shopping-cart-container">
+        <span class="shopping-cart-message">Shopping Cart</span> <br>
+        <span class="shopping-cart-sub-message">You have 4 items in your cart</span>
+        <div class="cart-fill-details">
+            <div class="cart-product-details">
+                <div class="single-item-cart">
+                    <div class="product-image">
+                        <img src="images/products/1.jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                            <span>Samsung Galaxy S21 FE 5G (Graphite, 8GB, 128GB Storage)</span>
+                    </div>
+                    <div class="product-qty">
+                        <span>+</span>
+                        <input type="text" readonly value="1" autocomplete="off" class="product-qty-field" maxlength="1" value="">
+                        <span>-</span>
+                    </div>
+                    <div class="product-price">
+                        Rs 20000
+                    </div>
+                    <div class="product-delete">
+                        <img src="images/icons/delete.svg" alt="">
+                    </div>
+                </div>
+                
+                <div class="single-item-cart">
+                    <div class="product-image">
+                        <img src="images/products/3.png" alt="">
+                    </div>
+                    <div class="product-name">
+                            <span>Samsung Galaxy S21 FE 5G (Graphite, 8GB, 128GB Storage)</span>
+                    </div>
+                    <div class="product-qty">
+                        <span>+</span>
+                        <input type="text" readonly value="1" autocomplete="off" class="product-qty-field" maxlength="1" value="">
+                        <span>-</span>
+                    </div>
+                    <div class="product-price">
+                        Rs 20000
+                    </div>
+                    <div class="product-delete">
+                        <img src="images/icons/delete.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="single-item-cart">
+                    <div class="product-image">
+                        <img src="images/products/2.png" alt="">
+                    </div>
+                    <div class="product-name">
+                            <span>Samsung Galaxy S21 FE 5G (Graphite, 8GB, 128GB Storage)</span>
+                    </div>
+                    <div class="product-qty">
+                        <span>+</span>
+                        <input type="text" readonly value="1" autocomplete="off" class="product-qty-field" maxlength="1" value="">
+                        <span>-</span>
+                    </div>
+                    <div class="product-price">
+                        Rs 20000
+                    </div>
+                    <div class="product-delete">
+                        <img src="images/icons/delete.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="single-item-cart">
+                    <div class="product-image">
+                        <img src="images/products/4.png" alt="">
+                    </div>
+                    <div class="product-name">
+                            <span>Samsung Galaxy S21 FE 5G (Graphite, 8GB, 128GB Storage)</span>
+                    </div>
+                    <div class="product-qty">
+                        <span>+</span>
+                        <input type="text" readonly value="1" autocomplete="off" class="product-qty-field" maxlength="1" value="">
+                        <span>-</span>
+                    </div>
+                    <div class="product-price">
+                        Rs 20000
+                    </div>
+                    <div class="product-delete">
+                        <img src="images/icons/delete.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-price-details">
+                <div class="price-container">
+                    <table class="table">
+                        <tr>
+                            <td colspan="2" class="border-bottom"><span>Price Summary</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ptb-5">Delivery</td>
+                            <td class="ptb-5"><span class="float-right">Free</span></td>
+                        </tr>
+                        <tr>
+                            <td class="pb-5">Product Price</td>
+                            <td><span class="float-right">Rs. 200000</span></td>
+                        </tr>
+                        <tr>
+                            <td class="border-top" colspan="2">
+                                <span class="float-left"><b>Total</b></span>
+                                <span class="float-right"><b>Rs. 20000</b></span>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a href="#">
+                        <button class="proced-to-checkout">
+                            Proceed To Checkout
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
